@@ -1,7 +1,7 @@
 <html>
   <body>
     <h1><%= title%></h1>
-    <p>Welcome to<%= title%></p>
+    <p>Welcome to <%= title%></p>
     <form method="get" action="/xml">
       <label for="url">XML URL:</label>
       <input type="text" name="url" />
@@ -13,8 +13,8 @@
       <div class="container-fluid clear">
         <h2><%= food.name%></h2>
         <div><%-food.description%></div>
-        <div><%-food.calories%></div>
-        <div><%-food.price%></div>
+        <div>Calories: <%-food.calories%></div>
+        <div>Price: <%-food.price%></div>
       </div>
       <% }); %>
     </div>
